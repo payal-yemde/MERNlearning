@@ -1,0 +1,38 @@
+.form{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+img{
+    width:100%;
+}
+.card{
+    text-align: center;
+    width: 300px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    }
+
+.form1 img{
+    width:20%;
+    border-radius: 100% ;
+}
+
+.form1{
+    display:flex;
+
+}
+
+.school{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
