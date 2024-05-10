@@ -8,7 +8,6 @@ img{
 }
 .card{
     text-align: center;
-    width: 300px;
     display: block;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
@@ -17,6 +16,7 @@ img{
 .container{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     }
 
 .form1 img{
@@ -33,6 +33,34 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-
-
+#image{
+    border : 5px solid black;
+    border-radius:10px;
+} 
+img{
+    border: 5px solid red;
+}
+@media screen and (max-width: 640px){
+    .school{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width : 95%;
+    }
+}
+@media  screen and (max-width:768px) and (min-width:641px){
+    .school{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        width : 45%;
+    }
+}
+@media screen and (min-width:769px) {
+    .school{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card{
+        width : 22%;
+    }
+}
